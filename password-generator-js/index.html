@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator App</title>
+</head>
+<body>
+    
+    <div class="pw-container">
+        <h1 id="title">Make your password stronger</h1>
+        <div class="text-box">
+            <input type="text" class="pw-word" id="input" maxlength="20" placeholder="Enter your word to generate pass">
+            <button id="convert">Go</button>
+        </div>
+        
+        <div class="pw-body">
+
+            <div class="form-control">
+                <input type="checkbox" id="letter-to-number" name="convert-letter">
+                <label for="number">Convert Letters into Numbers</label>
+            </div>
+        </div>
+        <div class="pw-after-body hidden">
+            <div class="pw">
+                <div class="pw-display">MYpasswROd</div>
+                <button id="copy">Copy</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
